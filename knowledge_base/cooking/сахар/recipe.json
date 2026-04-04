@@ -1,0 +1,18 @@
+{
+    "name": "Сахар",
+    "image": "сахар.png",
+    "ingredients": [
+        {
+            "id": "ingredient_01",
+            "name": "Сахарная свекла",
+            "image": "Сахарная свекла",
+            "amount": 3
+        },
+        {
+            "id": "ingredient_02",
+            "name": "Пресная вода",
+            "image": "Пресная вода.png",
+            "amount": 1
+        }
+    ]
+}
