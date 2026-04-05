@@ -33,7 +33,6 @@ class Overlay(QtWidgets.QWidget):
         painter.setPen(self.color)
         rect = QtCore.QRect(50, 50, 800, 600)
         painter.drawText(rect, QtCore.Qt.AlignLeft | QtCore.Qt.TextWordWrap, self.text)
-        #painter.drawText(50, 50, self.text)
 
     @QtCore.pyqtSlot(str)
     def update_text(self, new_text):

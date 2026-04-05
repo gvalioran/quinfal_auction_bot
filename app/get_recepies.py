@@ -1,28 +1,52 @@
+import json
 import time
-
 import pyautogui
 from message_sender import send_text
-board_path = r'../knowledge_base/task_board'
-board_cooking = f"{board_path}/base_locators"
+from pyautogui import ImageNotFoundException
+
 confidence = 0.7
-recipy_temp = f"{board_cooking}/task_board.png"
+board_path = r'../knowledge_base/task_board'
+board_tasks = f"{board_path}/base_locators"
+board_name = f"{board_tasks}/task_board.png"
 
-
-def search_tasks(recipy):
+def search_tasks(task):
     while True:
         time.sleep(5)
         try:
-            button = pyautogui.locateCenterOnScreen(recipy, confidence=confidence)
+            pyautogui.locateCenterOnScreen(task, confidence=confidence)
+            send_text("Фаза 1\n Доска задач обнаружена\n Ищём задачи")
+            search_tasks_names()
+        except ImageNotFoundException:
+            send_text("Фаза 1\n подойди к доске задач\n Доска задач не найдена ...")
+            continue
         except Exception as err:
-            button = False
-            print("Доска задач не обнаружена:", err)
-        if button:
-            return "Фаза 1\n Доска задач обнаружена\n Ищём задачи"
-    #return "Фаза 1\n подойди к доске задач\n Доска задач не найдена"
+            print("Неожиданная ошибка:", err)
+            continue
 
 
-send_text(search_tasks(recipy_temp))
+def search_tasks_names():
+    while True:
+        time.sleep(5)
+        recipes = f"{board_path}/recipes.json"
+        with open(recipes, "r", encoding="utf-8") as f:
+            recipes = json.load(f)
+        collect = []
+        try:
+            for recipy in recipes:
+                button = pyautogui.locateCenterOnScreen(recipy["image"], confidence=confidence)
+                if button:
+                    collect.append(recipy["name"])
+                    review = ", ".join(collect)
+                    send_text(f"Фаза 1\n Доска задач обнаружена\n {review}")
+        except ImageNotFoundException:
+            continue
+        except Exception as err:
+            print("Неожиданная ошибка:", err)
+            continue
 
+
+
+search_tasks(board_name)
 
 
 

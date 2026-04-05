@@ -1,0 +1,81 @@
+[
+    {
+        "name": "Большой витаминный камень",
+        "image": "../knowledge_base/task_board/cooking_tasks/big_vitamins.png",
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "Козье мясо",
+                "image": "../knowledge_base/",
+                "amount": 1
+            },
+            {
+                "id": "ingredient_02",
+                "name": "Хитин [Низкое качество]",
+                "image": "",
+                "amount": 2
+            },
+            {
+                "id": "ingredient_03",
+                "name": "Пустая ракушка мидии",
+                "image": "",
+                "amount": 4
+            },
+            {
+                "id": "ingredient_04",
+                "name": "Восковая соты",
+                "image": "",
+                "amount": 2
+            },
+            {
+                "id": "ingredient_05",
+                "name": "Баранина",
+                "image": "",
+                "amount": 1
+            },
+            {
+                "id": "ingredient_06",
+                "name": "Молоко",
+                "image": "",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "name": "Напиток Ухода",
+        "image": "../knowledge_base/task_board/alchemy_tasks/escape_drink.png",
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "Энергетическая трава",
+                "image": "Энергетическая трава.png",
+                "amount": 2
+            },
+            {
+                "id": "ingredient_02",
+                "name": "Пресная вода",
+                "image": "Пресная вода.png",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Блюдо скорости",
+        "image": "../knowledge_base/task_board/cooking_tasks/speed.png",
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "Энергетическая трава",
+                "image": "Энергетическая трава.png",
+                "amount": 2
+            },
+            {
+                "id": "ingredient_02",
+                "name": "Пресная вода",
+                "image": "Пресная вода.png",
+                "amount": 1
+            }
+        ]
+    }
+]
+
