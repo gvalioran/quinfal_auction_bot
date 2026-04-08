@@ -1,17 +1,5 @@
 [
     {
-        "name": "Эликсир быстрой жатвы",
-        "image": "../knowledge_base/task_board/alchemy_tasks/elixir_of_harvest.png",
-        "ingredients": [
-            {
-                "id": "ingredient_01",
-                "name": "",
-                "image": "../knowledge_base/",
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Большой витаминный камень",
         "image": "../knowledge_base/task_board/cooking_tasks/big_vitamins.png",
         "ingredients": [
