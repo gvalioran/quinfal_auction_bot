@@ -10,12 +10,13 @@ board_tasks = f"{board_path}/base_locators"
 board_name = f"{board_tasks}/task_board.png"
 
 def search_tasks(task):
+    collect = []
     while True:
         time.sleep(5)
         try:
             pyautogui.locateCenterOnScreen(task, confidence=confidence)
-            send_text("Фаза 1\n Доска задач обнаружена\n Ищём задачи")
-            search_tasks_names()
+            send_text("Фаза 1\n Доска задач обнаружена\n Ищём задачи ...")
+            search_tasks_names(collect)
         except ImageNotFoundException:
             send_text("Фаза 1\n подойди к доске задач\n Доска задач не найдена ...")
             continue
@@ -24,25 +25,25 @@ def search_tasks(task):
             continue
 
 
-def search_tasks_names():
+def search_tasks_names(collect):
     while True:
         time.sleep(5)
         recipes = f"{board_path}/recipes.json"
         with open(recipes, "r", encoding="utf-8") as f:
             recipes = json.load(f)
-        collect = []
-        try:
-            for recipy in recipes:
+        for recipy in recipes:
+            try:
                 button = pyautogui.locateCenterOnScreen(recipy["image"], confidence=confidence)
                 if button:
-                    collect.append(recipy["name"])
+                    if recipy["name"] not in collect:
+                        collect.append(recipy["name"])
                     review = ", ".join(collect)
                     send_text(f"Фаза 1\n Доска задач обнаружена\n {review}")
-        except ImageNotFoundException:
-            continue
-        except Exception as err:
-            print("Неожиданная ошибка:", err)
-            continue
+            except ImageNotFoundException:
+                continue
+            except Exception as err:
+                print("Неожиданная ошибка:", err)
+                continue
 
 
 
