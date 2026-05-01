@@ -42,6 +42,18 @@
         ]
     },
     {
+        "name": "Ускоренный сбор",
+        "image": "../knowledge_base/task_board/cooking_tasks/expedited_collection.png",
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "",
+                "image": "../knowledge_base/",
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Напиток Ухода",
         "image": "../knowledge_base/task_board/alchemy_tasks/escape_drink.png",
         "ingredients": [

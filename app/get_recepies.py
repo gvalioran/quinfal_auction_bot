@@ -16,6 +16,11 @@ auction_trash_button = f"{auction_path}/trash_button.png"
 auction_set_price = f"{auction_path}/set_price.png"
 auction_prise_goal = f"{auction_path}/prise_goal.png"
 auction_prise_goal_low = f"{auction_path}/prise_goal_low.png"
+auction_main_panel = f"{auction_path}/auction_main_panel.png"
+auction_main_panel_unactive = f"{auction_path}/auction_main_panel_unactive.png"
+auction_everything_items = f"{auction_path}/auction_everything_items.png"
+auction_everything_items_unactive = f"{auction_path}/auction_everything_items_unactive.png"
+auction_search_items = f"{auction_path}/auction_search_items.png"
 
 def search_tasks(task):
     collect = []
@@ -72,14 +77,32 @@ def find_auction(collect):
             continue
 
 def setup_auction(collect):
-    review = ", ".join(collect)
     while True:
         time.sleep(5)
         try:
-            pyautogui.locateCenterOnScreen(auction_search_button, confidence=confidence)
+            try:
+                pyautogui.locateCenterOnScreen(auction_main_panel, confidence=confidence)
+            except ImageNotFoundException:
+                main_panel = pyautogui.locateCenterOnScreen(auction_main_panel_unactive, confidence=confidence)
+                pyautogui.click(main_panel)
+                continue
+            except Exception as err:
+                print("Неожиданная ошибка:", err)
+                continue
+            try:
+                pyautogui.locateCenterOnScreen(auction_everything_items, confidence=confidence)
+            except ImageNotFoundException:
+                unactive_items = pyautogui.locateCenterOnScreen(auction_everything_items_unactive, confidence=confidence)
+                pyautogui.click(unactive_items)
+                continue
+            except Exception as err:
+                print("Неожиданная ошибка:", err)
+                continue
+            search_items = pyautogui.locateCenterOnScreen(auction_search_items, confidence=confidence)
+            pyautogui.click(search_items)
             try:
                 pyautogui.locateCenterOnScreen(auction_prise_goal, confidence=0.9, grayscale=False)
-                pyautogui.locateCenterOnScreen(auction_prise_goal_low, confidence=0.7)
+                pyautogui.locateCenterOnScreen(auction_prise_goal_low, confidence=confidence)
             except ImageNotFoundException:
                 try:
                     price_set = pyautogui.locateCenterOnScreen(auction_set_price, confidence=confidence)
@@ -90,7 +113,8 @@ def setup_auction(collect):
             except Exception as err:
                 print("Неожиданная ошибка:", err)
                 continue
-            continue
+            pyautogui.locateCenterOnScreen(auction_search_button, confidence=confidence)
+            buying_items(collect)
         except ImageNotFoundException:
             try:
                 trash = pyautogui.locateCenterOnScreen(auction_trash_button, confidence=confidence)
@@ -102,6 +126,20 @@ def setup_auction(collect):
             print("Неожиданная ошибка:", err)
             continue
 
+def buying_items(collect):
+    review = ", ".join(collect)
+    while True:
+        time.sleep(5)
+        try:
+            #pyautogui.locateCenterOnScreen(auction_board, confidence=confidence)
+            send_text(f"Фаза 3\n Покупка предметов\n Аукцион готов\n {review} ...")
+            setup_auction(collect)
+        except ImageNotFoundException:
+            send_text(f"Фаза 3\n Покупка предметов\n Аукцион готов\n {review} ...")
+            continue
+        except Exception as err:
+            print("Неожиданная ошибка:", err)
+            continue
 
 
 
