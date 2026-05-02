@@ -5,6 +5,7 @@
         "image": "../knowledge_base/task_board/alchemy_tasks/expedited_collection.png",
         "auction_image": "../knowledge_base/auction_images/alchemy/expedited_collection.png",
         "amount": 1,
+        "necessity": "True",
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -19,6 +20,7 @@
         "image": "../knowledge_base/task_board/alchemy_tasks/escape_drink.png",
         "auction_image": "../knowledge_base/auction_images/alchemy/escape_drink.png",
         "amount": 1,
+        "necessity": "True",
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -63,6 +65,7 @@
         "image": "../knowledge_base/task_board/alchemy_tasks/fast_fishing.png",
         "auction_image": "../knowledge_base/auction_images/alchemy/fast_fishing.png",
         "amount": 1,
+        "necessity": "True",
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -77,6 +80,7 @@
         "image": "../knowledge_base/task_board/alchemy_tasks/field_mixture.png",
         "auction_image": "../knowledge_base/auction_images/alchemy/field_mixture.png",
         "amount": 1,
+        "necessity": "True",
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -91,6 +95,7 @@
         "image": "../knowledge_base/task_board/alchemy_tasks/hunter's_rage.png",
         "auction_image": "../knowledge_base/auction_images/alchemy/hunter's_rage.png",
         "amount": 1,
+        "necessity": "True",
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -105,6 +110,7 @@
         "image": "../knowledge_base/task_board/alchemy_tasks/elixir_of_harvest.png",
         "auction_image": "../knowledge_base/auction_images/alchemy/elixir_of_harvest.png",
         "amount": 1,
+        "necessity": "True",
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -150,6 +156,7 @@
         "image": "../knowledge_base/task_board/cooking_tasks/big_vitamins.png",
         "auction_image": "../knowledge_base/auction_images/cooking/big_vitamins.png",
         "amount": 1,
+        "necessity": "True",
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -194,6 +201,7 @@
         "image": "../knowledge_base/task_board/cooking_tasks/fish_bread.png",
         "auction_image": "../knowledge_base/auction_images/cooking/fish_bread.png",
         "amount": 1,
+        "necessity": "True",
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -208,6 +216,7 @@
         "image": "../knowledge_base/task_board/cooking_tasks/rotten_soup.png",
         "auction_image": "../knowledge_base/auction_images/cooking/rotten_soup.png",
         "amount": 1,
+        "necessity": "True",
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -222,6 +231,7 @@
         "image": "../knowledge_base/task_board/cooking_tasks/small_vitamins.png",
         "auction_image": "../knowledge_base/auction_images/cooking/small_vitamins.png",
         "amount": 1,
+        "necessity": "True",
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -236,6 +246,7 @@
         "image": "../knowledge_base/task_board/cooking_tasks/speed.png",
         "auction_image": "../knowledge_base/auction_images/cooking/speed.png",
         "amount": 1,
+        "necessity": "True",
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -256,6 +267,7 @@
         "image": "../knowledge_base/task_board/cooking_tasks/spicy_soup.png",
         "auction_image": "../knowledge_base/auction_images/cooking/spicy_soup.png",
         "amount": 1,
+        "necessity": "True",
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -276,27 +288,165 @@
         "name": "Акула",
         "image": "../knowledge_base/task_board/fish_tasks/shark.png",
         "auction_image": "../knowledge_base/auction_images/fish/shark.png",
-        "amount": 1
+        "amount": 1,
+        "necessity": "True"
     },
     {
         "name": "Тунец",
         "image": "../knowledge_base/task_board/fish_tasks/tuna.png",
         "auction_image": "../knowledge_base/auction_images/fish/tuna.png",
-        "amount": 5
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
+        "name": "Дорадо",
+        "image": "../knowledge_base/task_board/fish_tasks/dorado.png",
+        "auction_image": "../knowledge_base/auction_images/fish/dorado.png",
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
+        "name": "Мидия",
+        "image": "../knowledge_base/task_board/fish_tasks/mussel.png",
+        "auction_image": "../knowledge_base/auction_images/fish/mussel.png",
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
+        "name": "Удильщик",
+        "image": "../knowledge_base/task_board/fish_tasks/anglerfish.png",
+        "auction_image": "../knowledge_base/auction_images/fish/anglerfish.png",
+        "amount": 1,
+        "necessity": "True"
+    },
+    {
+        "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!HUNT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+        "name": "Беличья шкура",
+        "image": "../knowledge_base/task_board/hunt_tasks/squirrel_skin.png",
+        "auction_image": "../knowledge_base/auction_images/hunt/squirrel_skin.png",
+        "amount": 5,
+        "necessity": "False"
+    },
+    {
+        "name": "Зебровая шкура",
+        "image": "../knowledge_base/task_board/hunt_tasks/zebra_skin.png",
+        "auction_image": "../knowledge_base/auction_images/hunt/zebra_skin.png",
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
+        "name": "Страусиная шкура",
+        "image": "../knowledge_base/task_board/hunt_tasks/ostrich_skin.png",
+        "auction_image": "../knowledge_base/auction_images/hunt/ostrich_skin.png",
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
+        "name": "Пингвиний шкура",
+        "image": "../knowledge_base/task_board/hunt_tasks/penguin_skin.png",
+        "auction_image": "../knowledge_base/auction_images/hunt/penguin_skin.png",
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
+        "name": "Кроличий шкура",
+        "image": "../knowledge_base/task_board/hunt_tasks/rabbit_skin.png",
+        "auction_image": "../knowledge_base/auction_images/hunt/rabbit_skin.png",
+        "amount": 5,
+        "necessity": "False"
+    },
+    {
+        "name": "Лягушачья шкура",
+        "image": "../knowledge_base/task_board/hunt_tasks/frog_skin.png",
+        "auction_image": "../knowledge_base/auction_images/hunt/frog_skin.png",
+        "amount": 5,
+        "necessity": "True"
     },
     {
         "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ORES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
         "name": "Сера",
         "image": "../knowledge_base/task_board/ores_tasks/sulfur.png",
         "auction_image": "../knowledge_base/auction_images/ores/sulfur.png",
-        "amount": 10
+        "amount": 10,
+        "necessity": "True"
+    },
+    {
+        "name": "Серебряная руда",
+        "image": "../knowledge_base/task_board/ores_tasks/silver.png",
+        "auction_image": "../knowledge_base/auction_images/ores/silver.png",
+        "amount": 10,
+        "necessity": "True"
+    },
+    {
+        "name": "Золотая руда",
+        "image": "../knowledge_base/task_board/ores_tasks/gold_ore.png",
+        "auction_image": "../knowledge_base/auction_images/ores/gold_ore.png",
+        "amount": 10,
+        "necessity": "False"
+    },
+    {
+        "name": "Кобальтовая руда",
+        "image": "../knowledge_base/task_board/ores_tasks/cobalt_ore.png",
+        "auction_image": "../knowledge_base/auction_images/ores/cobalt_ore.png",
+        "amount": 10,
+        "necessity": "False"
+    },
+    {
+        "name": "Обсидиан",
+        "image": "../knowledge_base/task_board/ores_tasks/obsidian.png",
+        "auction_image": "../knowledge_base/auction_images/ores/obsidian.png",
+        "amount": 10,
+        "necessity": "False"
     },
     {
         "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PLANTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
         "name": "Лист туманной розы",
         "image": "../knowledge_base/task_board/plants_tasks/misty_rose_leaf.png",
         "auction_image": "../knowledge_base/auction_images/plants/misty_rose_leaf.png",
-        "amount": 10
+        "amount": 10,
+        "necessity": "True"
+    },
+    {
+        "name": "Смолистая твёрдая древесина",
+        "image": "../knowledge_base/task_board/plants_tasks/resinous_hardwood.png",
+        "auction_image": "../knowledge_base/auction_images/plants/resinous_hardwood.png",
+        "amount": 10,
+        "necessity": "False"
+    },
+    {
+        "name": "Кожаное полено",
+        "image": "../knowledge_base/task_board/plants_tasks/leather_log.png",
+        "auction_image": "../knowledge_base/auction_images/plants/leather_log.png",
+        "amount": 10,
+        "necessity": "False"
+    },
+    {
+        "name": "Огненное семя",
+        "image": "../knowledge_base/task_board/plants_tasks/fire_seed.png",
+        "auction_image": "../knowledge_base/auction_images/plants/fire_seed.png",
+        "amount": 1,
+        "necessity": "False"
+    },
+    {
+        "name": "Тонкий стебель",
+        "image": "../knowledge_base/task_board/plants_tasks/thin_stem.png",
+        "auction_image": "../knowledge_base/auction_images/plants/thin_stem.png",
+        "amount": 10,
+        "necessity": "False"
+    },
+    {
+        "name": "Капля тумана",
+        "image": "../knowledge_base/task_board/plants_tasks/drop_of_fog.png",
+        "auction_image": "../knowledge_base/auction_images/plants/drop_of_fog.png",
+        "amount": 1,
+        "necessity": "False"
+    },
+    {
+        "name": "Искроносная пыльца",
+        "image": "../knowledge_base/task_board/plants_tasks/sparkling_pollen.png",
+        "auction_image": "../knowledge_base/auction_images/plants/sparkling_pollen.png",
+        "amount": 10,
+        "necessity": "False"
     }
 ]
 

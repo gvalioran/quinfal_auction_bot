@@ -25,6 +25,7 @@ auction_everything_items = f"{auction_path}/auction_everything_items.png"
 auction_everything_items_unactive = f"{auction_path}/auction_everything_items_unactive.png"
 auction_search_items = f"{auction_path}/auction_search_items.png"
 buy_button = f"{auction_path}/buy_button.png"
+auction_count = f"{auction_path}/count.png"
 
 def search_tasks(task):
     collect = []
@@ -52,7 +53,7 @@ def search_tasks_names(collect):
             try:
                 button = pyautogui.locateCenterOnScreen(recipy["image"], confidence=confidence)
                 if button:
-                    if recipy["name"] not in collect:
+                    if recipy["name"] not in collect and recipy["necessity"] == "True":
                         collect.append(recipy["name"])
                     review = ", ".join(collect)
                     send_text(f"Фаза 1\n Доска задач обнаружена\n {review}")
@@ -183,6 +184,13 @@ def buy_item(item):
     find_item = pyautogui.locateCenterOnScreen(item["auction_image"], confidence=confidence)
     x, y = find_item
     pyautogui.click(x + 120, y)
+    if item["amount"] == 1:
+        pass
+    else:
+        count = pyautogui.locateCenterOnScreen(auction_count, confidence=confidence)
+        pyautogui.click(count)
+        for i in range(item["amount"]-1):
+            pydirectinput.press('right')
     buy = pyautogui.locateCenterOnScreen(buy_button, confidence=confidence)
     if buy:
         pyautogui.click(buy)
