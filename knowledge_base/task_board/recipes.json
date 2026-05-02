@@ -1,49 +1,10 @@
 [
     {
-        "name": "Большой витаминный камень",
-        "image": "../knowledge_base/task_board/cooking_tasks/big_vitamins.png",
-        "ingredients": [
-            {
-                "id": "ingredient_01",
-                "name": "Козье мясо",
-                "image": "../knowledge_base/",
-                "amount": 1
-            },
-            {
-                "id": "ingredient_02",
-                "name": "Хитин [Низкое качество]",
-                "image": "",
-                "amount": 2
-            },
-            {
-                "id": "ingredient_03",
-                "name": "Пустая ракушка мидии",
-                "image": "",
-                "amount": 4
-            },
-            {
-                "id": "ingredient_04",
-                "name": "Восковая соты",
-                "image": "",
-                "amount": 2
-            },
-            {
-                "id": "ingredient_05",
-                "name": "Баранина",
-                "image": "",
-                "amount": 1
-            },
-            {
-                "id": "ingredient_06",
-                "name": "Молоко",
-                "image": "",
-                "amount": 2
-            }
-        ]
-    },
-    {
-        "name": "Ускоренный сбор",
-        "image": "../knowledge_base/task_board/cooking_tasks/expedited_collection.png",
+        "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ALCHEMY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+        "name": "Ускоренный Сбор [Уровень 1]",
+        "image": "../knowledge_base/task_board/alchemy_tasks/expedited_collection.png",
+        "auction_image": "../knowledge_base/auction_images/alchemy/expedited_collection.png",
+        "amount": 1,
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -54,8 +15,10 @@
         ]
     },
     {
-        "name": "Напиток Ухода",
+        "name": "Напиток Ухода [Уровень 1]",
         "image": "../knowledge_base/task_board/alchemy_tasks/escape_drink.png",
+        "auction_image": "../knowledge_base/auction_images/alchemy/escape_drink.png",
+        "amount": 1,
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -96,8 +59,10 @@
         ]
     },
     {
-        "name": "Быстрая рыболовная жидкость",
+        "name": "Быстрая Рыболовная Жидкость [Уровень 1]",
         "image": "../knowledge_base/task_board/alchemy_tasks/fast_fishing.png",
+        "auction_image": "../knowledge_base/auction_images/alchemy/fast_fishing.png",
+        "amount": 1,
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -108,8 +73,10 @@
         ]
     },
     {
-        "name": "Полевая смесь",
+        "name": "Полевaя Смесь [Уровень 1]",
         "image": "../knowledge_base/task_board/alchemy_tasks/field_mixture.png",
+        "auction_image": "../knowledge_base/auction_images/alchemy/field_mixture.png",
+        "amount": 1,
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -120,8 +87,10 @@
         ]
     },
     {
-        "name": "Ярость охотника",
+        "name": "Ярость Охотника [Уровень 1]",
         "image": "../knowledge_base/task_board/alchemy_tasks/hunter's_rage.png",
+        "auction_image": "../knowledge_base/auction_images/alchemy/hunter's_rage.png",
+        "amount": 1,
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -132,50 +101,10 @@
         ]
     },
     {
-        "name": "Суп из гнилых растений",
-        "image": "../knowledge_base/task_board/cooking_tasks/rotten_soup.png",
-        "ingredients": [
-            {
-                "id": "ingredient_01",
-                "name": "",
-                "image": "../knowledge_base/",
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Витаминный камень",
-        "image": "../knowledge_base/task_board/cooking_tasks/small_vitamins.png",
-        "ingredients": [
-            {
-                "id": "ingredient_01",
-                "name": "",
-                "image": "../knowledge_base/",
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Блюдо скорости",
-        "image": "../knowledge_base/task_board/cooking_tasks/speed.png",
-        "ingredients": [
-            {
-                "id": "ingredient_01",
-                "name": "Энергетическая трава",
-                "image": "Энергетическая трава.png",
-                "amount": 2
-            },
-            {
-                "id": "ingredient_02",
-                "name": "Пресная вода",
-                "image": "Пресная вода.png",
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Эликсир Быстрой Жатвы",
+        "name": "Эликсир Быстрой Жатвы [Уровень 1]",
         "image": "../knowledge_base/task_board/alchemy_tasks/elixir_of_harvest.png",
+        "auction_image": "../knowledge_base/auction_images/alchemy/elixir_of_harvest.png",
+        "amount": 1,
         "ingredients": [
             {
                 "id": "ingredient_01",
@@ -214,6 +143,160 @@
                 "amount": 2
             }
         ]
+    },
+    {
+        "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!COOCKING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+        "name": "Большой витаминный камень [Уровень 1]",
+        "image": "../knowledge_base/task_board/cooking_tasks/big_vitamins.png",
+        "auction_image": "../knowledge_base/auction_images/cooking/big_vitamins.png",
+        "amount": 1,
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "Козье мясо",
+                "image": "../knowledge_base/",
+                "amount": 1
+            },
+            {
+                "id": "ingredient_02",
+                "name": "Хитин [Низкое качество]",
+                "image": "",
+                "amount": 2
+            },
+            {
+                "id": "ingredient_03",
+                "name": "Пустая ракушка мидии",
+                "image": "",
+                "amount": 4
+            },
+            {
+                "id": "ingredient_04",
+                "name": "Восковая соты",
+                "image": "",
+                "amount": 2
+            },
+            {
+                "id": "ingredient_05",
+                "name": "Баранина",
+                "image": "",
+                "amount": 1
+            },
+            {
+                "id": "ingredient_06",
+                "name": "Молоко",
+                "image": "",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "name": "Рыбный хлеб [Уровень 1]",
+        "image": "../knowledge_base/task_board/cooking_tasks/fish_bread.png",
+        "auction_image": "../knowledge_base/auction_images/cooking/fish_bread.png",
+        "amount": 1,
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "",
+                "image": "../knowledge_base/",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Суп из Гнилых Растений [Уровень 1]",
+        "image": "../knowledge_base/task_board/cooking_tasks/rotten_soup.png",
+        "auction_image": "../knowledge_base/auction_images/cooking/rotten_soup.png",
+        "amount": 1,
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "",
+                "image": "../knowledge_base/",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Витаминный камень [Уровень 1]",
+        "image": "../knowledge_base/task_board/cooking_tasks/small_vitamins.png",
+        "auction_image": "../knowledge_base/auction_images/cooking/small_vitamins.png",
+        "amount": 1,
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "",
+                "image": "../knowledge_base/",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Блюдо из Травы Скорости [Уровень 1]",
+        "image": "../knowledge_base/task_board/cooking_tasks/speed.png",
+        "auction_image": "../knowledge_base/auction_images/cooking/speed.png",
+        "amount": 1,
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "Энергетическая трава",
+                "image": "Энергетическая трава.png",
+                "amount": 2
+            },
+            {
+                "id": "ingredient_02",
+                "name": "Пресная вода",
+                "image": "Пресная вода.png",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Острая Суп [Уровень 1]",
+        "image": "../knowledge_base/task_board/cooking_tasks/spicy_soup.png",
+        "auction_image": "../knowledge_base/auction_images/cooking/spicy_soup.png",
+        "amount": 1,
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "Энергетическая трава",
+                "image": "Энергетическая трава.png",
+                "amount": 2
+            },
+            {
+                "id": "ingredient_02",
+                "name": "Пресная вода",
+                "image": "Пресная вода.png",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!FISH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+        "name": "Акула",
+        "image": "../knowledge_base/task_board/fish_tasks/shark.png",
+        "auction_image": "../knowledge_base/auction_images/fish/shark.png",
+        "amount": 1
+    },
+    {
+        "name": "Тунец",
+        "image": "../knowledge_base/task_board/fish_tasks/tuna.png",
+        "auction_image": "../knowledge_base/auction_images/fish/tuna.png",
+        "amount": 5
+    },
+    {
+        "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ORES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+        "name": "Сера",
+        "image": "../knowledge_base/task_board/ores_tasks/sulfur.png",
+        "auction_image": "../knowledge_base/auction_images/ores/sulfur.png",
+        "amount": 10
+    },
+    {
+        "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PLANTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+        "name": "Лист туманной розы",
+        "image": "../knowledge_base/task_board/plants_tasks/misty_rose_leaf.png",
+        "auction_image": "../knowledge_base/auction_images/plants/misty_rose_leaf.png",
+        "amount": 10
     }
 ]
 

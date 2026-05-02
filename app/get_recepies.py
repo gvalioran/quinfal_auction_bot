@@ -1,6 +1,9 @@
 import json
 import time
 import pyautogui
+import pydirectinput
+import pyperclip
+
 from message_sender import send_text
 from pyautogui import ImageNotFoundException
 
@@ -21,6 +24,7 @@ auction_main_panel_unactive = f"{auction_path}/auction_main_panel_unactive.png"
 auction_everything_items = f"{auction_path}/auction_everything_items.png"
 auction_everything_items_unactive = f"{auction_path}/auction_everything_items_unactive.png"
 auction_search_items = f"{auction_path}/auction_search_items.png"
+buy_button = f"{auction_path}/buy_button.png"
 
 def search_tasks(task):
     collect = []
@@ -98,8 +102,7 @@ def setup_auction(collect):
             except Exception as err:
                 print("Неожиданная ошибка:", err)
                 continue
-            search_items = pyautogui.locateCenterOnScreen(auction_search_items, confidence=confidence)
-            pyautogui.click(search_items)
+            pyautogui.locateCenterOnScreen(auction_search_items, confidence=confidence)
             try:
                 pyautogui.locateCenterOnScreen(auction_prise_goal, confidence=0.9, grayscale=False)
                 pyautogui.locateCenterOnScreen(auction_prise_goal_low, confidence=confidence)
@@ -131,17 +134,61 @@ def buying_items(collect):
     while True:
         time.sleep(5)
         try:
-            #pyautogui.locateCenterOnScreen(auction_board, confidence=confidence)
+            pyautogui.locateCenterOnScreen(auction_main_panel, confidence=confidence)
             send_text(f"Фаза 3\n Покупка предметов\n Аукцион готов\n {review} ...")
-            setup_auction(collect)
+            recipes = f"{board_path}/recipes.json"
+            with open(recipes, "r", encoding="utf-8") as f:
+                recipes = json.load(f)
+            for recipy in recipes:
+                if recipy["name"] == collect[0]:
+                    send_text(f"Фаза 3\n Покупка предметов\n Покупаю\n {recipy['name']}\n {review}")
+                    if buy_item(recipy):
+                        collect.pop(0)
+                        send_text(f"Фаза 3\n Покупка предметов\n Покупаю\n {recipy['name']}\n {review}")
+                        if collect == []:
+                            while True:
+                                send_text("Покупка предметов завершена")
+                                time.sleep(30)
+                    else:
+                        continue
+
         except ImageNotFoundException:
-            send_text(f"Фаза 3\n Покупка предметов\n Аукцион готов\n {review} ...")
+            send_text(f"Фаза 3\n Покупка предметов\n Открой аукцион обратно\n {review} ...")
             continue
         except Exception as err:
             print("Неожиданная ошибка:", err)
             continue
 
-
+def buy_item(item):
+    time.sleep(5)
+    try:
+        pyautogui.locateCenterOnScreen(auction_search_button, confidence=confidence)
+    except ImageNotFoundException:
+        trash = pyautogui.locateCenterOnScreen(auction_trash_button, confidence=confidence)
+        pyautogui.click(trash)
+    search_items = pyautogui.locateCenterOnScreen(auction_search_items, confidence=confidence)
+    x, y = search_items
+    pyautogui.click(x + 120, y)
+    pydirectinput.keyDown('ctrl')
+    pydirectinput.press('a')
+    pydirectinput.keyUp('ctrl')
+    pyautogui.press('backspace')
+    pyperclip.copy(item["name"])
+    pydirectinput.keyDown('ctrl')
+    pydirectinput.press('v')
+    pydirectinput.keyUp('ctrl')
+    search_button = pyautogui.locateCenterOnScreen(auction_search_button, confidence=confidence)
+    pyautogui.click(search_button)
+    time.sleep(1)
+    find_item = pyautogui.locateCenterOnScreen(item["auction_image"], confidence=confidence)
+    x, y = find_item
+    pyautogui.click(x + 120, y)
+    buy = pyautogui.locateCenterOnScreen(buy_button, confidence=confidence)
+    if buy:
+        pyautogui.click(buy)
+        return True
+    else:
+        return False
 
 search_tasks(board_name)
 
