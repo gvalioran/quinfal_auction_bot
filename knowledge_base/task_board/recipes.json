@@ -212,6 +212,21 @@
         ]
     },
     {
+        "name": "Корм Мастера для Питомцев [Уровень 1]",
+        "image": "../knowledge_base/task_board/cooking_tasks/master_pet_food.png",
+        "auction_image": "../knowledge_base/auction_images/cooking/master_pet_food.png",
+        "amount": 1,
+        "necessity": "True",
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "",
+                "image": "../knowledge_base/",
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Суп из Гнилых Растений [Уровень 1]",
         "image": "../knowledge_base/task_board/cooking_tasks/rotten_soup.png",
         "auction_image": "../knowledge_base/auction_images/cooking/rotten_soup.png",
@@ -313,6 +328,20 @@
         "necessity": "True"
     },
     {
+        "name": "Апистограмма",
+        "image": "../knowledge_base/task_board/fish_tasks/apistogram.png",
+        "auction_image": "../knowledge_base/auction_images/fish/apistogram.png",
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
+        "name": "Сельдь",
+        "image": "../knowledge_base/task_board/fish_tasks/herring.png",
+        "auction_image": "../knowledge_base/auction_images/fish/herring.png",
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
         "name": "Удильщик",
         "image": "../knowledge_base/task_board/fish_tasks/anglerfish.png",
         "auction_image": "../knowledge_base/auction_images/fish/anglerfish.png",
@@ -361,6 +390,34 @@
         "auction_image": "../knowledge_base/auction_images/hunt/frog_skin.png",
         "amount": 5,
         "necessity": "True"
+    },
+    {
+        "name": "Шкура чёрной мамбы",
+        "image": "../knowledge_base/task_board/hunt_tasks/black_mamba_skin.png",
+        "auction_image": "../knowledge_base/auction_images/hunt/black_mamba_skin.png",
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
+        "name": "Перо",
+        "image": "../knowledge_base/task_board/hunt_tasks/feather.png",
+        "auction_image": "../knowledge_base/auction_images/hunt/feather.png",
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
+        "name": "Мясо диких животных",
+        "image": "../knowledge_base/task_board/hunt_tasks/wild_meat.png",
+        "auction_image": "../knowledge_base/auction_images/hunt/wild_meat.png",
+        "amount": 5,
+        "necessity": "False"
+    },
+    {
+        "name": "Рефлексный сухожилие",
+        "image": "../knowledge_base/task_board/hunt_tasks/reflex_tendon.png",
+        "auction_image": "../knowledge_base/auction_images/hunt/reflex_tendon.png",
+        "amount": 5,
+        "necessity": "False"
     },
     {
         "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ORES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
@@ -445,6 +502,13 @@
         "name": "Искроносная пыльца",
         "image": "../knowledge_base/task_board/plants_tasks/sparkling_pollen.png",
         "auction_image": "../knowledge_base/auction_images/plants/sparkling_pollen.png",
+        "amount": 10,
+        "necessity": "False"
+    },
+    {
+        "name": "Туманное семя",
+        "image": "../knowledge_base/task_board/plants_tasks/misty_seed.png",
+        "auction_image": "../knowledge_base/auction_images/plants/misty_seed.png",
         "amount": 10,
         "necessity": "False"
     }

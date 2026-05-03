@@ -145,6 +145,7 @@ def buying_items(collect):
                     send_text(f"Фаза 3\n Покупка предметов\n Покупаю\n {recipy['name']}\n {review}")
                     if buy_item(recipy):
                         collect.pop(0)
+                        review = ", ".join(collect)
                         send_text(f"Фаза 3\n Покупка предметов\n Покупаю\n {recipy['name']}\n {review}")
                         if collect == []:
                             while True:
