@@ -55,8 +55,7 @@ def tcp_server(overlay: Overlay):
             overlay.update_text(data)
         conn.close()
 
-
-if __name__ == "__main__":
+def start_overlay():
     app = QtWidgets.QApplication(sys.argv)
     overlay = Overlay()
     # сервер в отдельном потоке

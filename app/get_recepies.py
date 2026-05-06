@@ -4,15 +4,19 @@ import pyautogui
 import pydirectinput
 import pyperclip
 
-from message_sender import send_text
+from app.message_sender import send_text
 from pyautogui import ImageNotFoundException
 
+import os
+
 confidence = 0.7
-board_path = r'../knowledge_base/task_board'
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+board_path = os.path.join(BASE_DIR, "knowledge_base", "task_board")
 board_tasks = f"{board_path}/base_locators"
 board_name = f"{board_tasks}/task_board.png"
 
-auction_path = r'../knowledge_base/auction_locators'
+auction_path = os.path.join(BASE_DIR, "knowledge_base", "auction_locators")
 auction_board = f"{auction_path}/auction_board.png"
 auction_search_button = f"{auction_path}/search_button.png"
 auction_trash_button = f"{auction_path}/trash_button.png"
@@ -51,7 +55,7 @@ def search_tasks_names(collect):
             recipes = json.load(f)
         for recipy in recipes:
             try:
-                button = pyautogui.locateCenterOnScreen(recipy["image"], confidence=confidence)
+                button = pyautogui.locateCenterOnScreen(os.path.join(BASE_DIR, recipy["image"]), confidence=confidence)
                 if button:
                     if recipy["name"] not in collect and recipy["necessity"] == "True":
                         collect.append(recipy["name"])
@@ -182,7 +186,7 @@ def buy_item(item):
     search_button = pyautogui.locateCenterOnScreen(auction_search_button, confidence=confidence)
     pyautogui.click(search_button)
     time.sleep(1)
-    find_item = pyautogui.locateCenterOnScreen(item["auction_image"], confidence=confidence)
+    find_item = pyautogui.locateCenterOnScreen(os.path.join(BASE_DIR, item["auction_image"]), confidence=confidence)
     x, y = find_item
     pyautogui.click(x + 120, y)
     if item["amount"] == 1:
@@ -199,7 +203,8 @@ def buy_item(item):
     else:
         return False
 
-search_tasks(board_name)
+def start_logic():
+    search_tasks(board_name)
 
 
 
