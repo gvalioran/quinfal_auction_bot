@@ -2,7 +2,8 @@
     {
         "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ALCHEMY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
         "name": "Сбор [Уровень 1]",
-        "image": "knowledge_base/task_board/alchemy_tasks/expedited_collection.png",
+        "image": "knowledge_base/task_board/tasks_text/alchemy_tasks/expedited_collection.png",
+        "image_board" : "knowledge_base/task_board/image_board/alchemy_tasks/expedited_collection.png",
         "auction_image": "knowledge_base/auction_images/alchemy/expedited_collection.png",
         "amount": 1,
         "necessity": "True",
@@ -17,7 +18,7 @@
     },
     {
         "name": "Напиток Ухода [Уровень 1]",
-        "image": "knowledge_base/task_board/alchemy_tasks/escape_drink.png",
+        "image": "knowledge_base/task_board/tasks_text/alchemy_tasks/escape_drink.png",
         "auction_image": "knowledge_base/auction_images/alchemy/escape_drink.png",
         "amount": 1,
         "necessity": "True",
@@ -62,7 +63,7 @@
     },
     {
         "name": "Быстрая Рыболовная Жидкость [Уровень 1]",
-        "image": "knowledge_base/task_board/alchemy_tasks/fast_fishing.png",
+        "image": "knowledge_base/task_board/tasks_text/alchemy_tasks/fast_fishing.png",
         "auction_image": "knowledge_base/auction_images/alchemy/fast_fishing.png",
         "amount": 1,
         "necessity": "True",
@@ -77,7 +78,8 @@
     },
     {
         "name": "Эликсир Производственного Допинга [Уровень 1]",
-        "image": "knowledge_base/task_board/alchemy_tasks/elixir_of_industrial_doping.png",
+        "image": "knowledge_base/task_board/tasks_text/alchemy_tasks/elixir_of_industrial_doping.png",
+        "image_board" : "knowledge_base/task_board/image_board/alchemy_tasks/elixir_of_industrial_doping.png",
         "auction_image": "knowledge_base/auction_images/alchemy/elixir_of_industrial_doping.png",
         "amount": 1,
         "necessity": "True",
@@ -92,7 +94,8 @@
     },
     {
         "name": "Полевaя Смесь [Уровень 1]",
-        "image": "knowledge_base/task_board/alchemy_tasks/field_mixture.png",
+        "image": "knowledge_base/task_board/tasks_text/alchemy_tasks/field_mixture.png",
+        "image_board" : "knowledge_base/task_board/image_board/alchemy_tasks/field_mixture.png",
         "auction_image": "knowledge_base/auction_images/alchemy/field_mixture.png",
         "amount": 1,
         "necessity": "True",
@@ -106,8 +109,24 @@
         ]
     },
     {
+        "name": "Эликсир Мастера [Уровень 1]",
+        "image": "knowledge_base/task_board/tasks_text/alchemy_tasks/master_elixir.png",
+        "image_board" : "knowledge_base/task_board/image_board/alchemy_tasks/master_elixir.png",
+        "auction_image": "knowledge_base/auction_images/alchemy/master_elixir.png",
+        "amount": 1,
+        "necessity": "True",
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "",
+                "image": "knowledge_base/",
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Ярость Охотника [Уровень 1]",
-        "image": "knowledge_base/task_board/alchemy_tasks/hunter's_rage.png",
+        "image": "knowledge_base/task_board/tasks_text/alchemy_tasks/hunter's_rage.png",
         "auction_image": "knowledge_base/auction_images/alchemy/hunter's_rage.png",
         "amount": 1,
         "necessity": "True",
@@ -122,7 +141,8 @@
     },
     {
         "name": "Эликсир Быстрой Жатвы [Уровень 1]",
-        "image": "knowledge_base/task_board/alchemy_tasks/elixir_of_harvest.png",
+        "image": "knowledge_base/task_board/tasks_text/alchemy_tasks/elixir_of_harvest.png",
+        "image_board" : "knowledge_base/task_board/image_board/alchemy_tasks/elixir_of_harvest.png",
         "auction_image": "knowledge_base/auction_images/alchemy/elixir_of_harvest.png",
         "amount": 1,
         "necessity": "True",
@@ -168,7 +188,8 @@
     {
         "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!COOCKING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
         "name": "Большой витаминный камень [Уровень 1]",
-        "image": "knowledge_base/task_board/cooking_tasks/big_vitamins.png",
+        "image": "knowledge_base/task_board/tasks_text/cooking_tasks/big_vitamins.png",
+        "image_board" : "knowledge_base/task_board/image_board/cooking_tasks/big_vitamins.png",
         "auction_image": "knowledge_base/auction_images/cooking/big_vitamins.png",
         "amount": 1,
         "necessity": "True",
@@ -213,7 +234,7 @@
     },
     {
         "name": "Рыбный хлеб [Уровень 1]",
-        "image": "knowledge_base/task_board/cooking_tasks/fish_bread.png",
+        "image": "knowledge_base/task_board/tasks_text/cooking_tasks/fish_bread.png",
         "auction_image": "knowledge_base/auction_images/cooking/fish_bread.png",
         "amount": 1,
         "necessity": "True",
@@ -228,7 +249,7 @@
     },
     {
         "name": "Жирный хлеб [Уровень 1]",
-        "image": "knowledge_base/task_board/cooking_tasks/fat_bread.png",
+        "image": "knowledge_base/task_board/tasks_text/cooking_tasks/fat_bread.png",
         "auction_image": "knowledge_base/auction_images/cooking/fat_bread.png",
         "amount": 1,
         "necessity": "True",
@@ -243,7 +264,7 @@
     },
     {
         "name": "Корм Мастера для Питомцев [Уровень 1]",
-        "image": "knowledge_base/task_board/cooking_tasks/master_pet_food.png",
+        "image": "knowledge_base/task_board/tasks_text/cooking_tasks/master_pet_food.png",
         "auction_image": "knowledge_base/auction_images/cooking/master_pet_food.png",
         "amount": 1,
         "necessity": "True",
@@ -258,7 +279,7 @@
     },
     {
         "name": "Суп из Гнилых Растений [Уровень 1]",
-        "image": "knowledge_base/task_board/cooking_tasks/rotten_soup.png",
+        "image": "knowledge_base/task_board/tasks_text/cooking_tasks/rotten_soup.png",
         "auction_image": "knowledge_base/auction_images/cooking/rotten_soup.png",
         "amount": 1,
         "necessity": "True",
@@ -273,7 +294,8 @@
     },
     {
         "name": "Витаминный камень [Уровень 1]",
-        "image": "knowledge_base/task_board/cooking_tasks/small_vitamins.png",
+        "image": "knowledge_base/task_board/tasks_text/cooking_tasks/small_vitamins.png",
+        "image_board" : "knowledge_base/task_board/image_board/cooking_tasks/small_vitamins.png",
         "auction_image": "knowledge_base/auction_images/cooking/small_vitamins.png",
         "amount": 1,
         "necessity": "True",
@@ -288,7 +310,7 @@
     },
     {
         "name": "Блюдо из Травы Скорости [Уровень 1]",
-        "image": "knowledge_base/task_board/cooking_tasks/speed.png",
+        "image": "knowledge_base/task_board/tasks_text/cooking_tasks/speed.png",
         "auction_image": "knowledge_base/auction_images/cooking/speed.png",
         "amount": 1,
         "necessity": "True",
@@ -309,8 +331,30 @@
     },
     {
         "name": "Острая Суп [Уровень 1]",
-        "image": "knowledge_base/task_board/cooking_tasks/spicy_soup.png",
+        "image": "knowledge_base/task_board/tasks_text/cooking_tasks/spicy_soup.png",
         "auction_image": "knowledge_base/auction_images/cooking/spicy_soup.png",
+        "amount": 1,
+        "necessity": "True",
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "Энергетическая трава",
+                "image": "Энергетическая трава.png",
+                "amount": 2
+            },
+            {
+                "id": "ingredient_02",
+                "name": "Пресная вода",
+                "image": "Пресная вода.png",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Растительный Суп с Экстрактом Кактуса [Уровень 1]",
+        "image": "knowledge_base/task_board/tasks_text/cooking_tasks/herbal_soup_cactus.png",
+        "image_board" : "knowledge_base/task_board/image_board/cooking_tasks/herbal_soup_cactus.png",
+        "auction_image": "knowledge_base/auction_images/cooking/herbal_soup_cactus.png",
         "amount": 1,
         "necessity": "True",
         "ingredients": [
@@ -331,176 +375,217 @@
     {
         "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!FISH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
         "name": "Акула",
-        "image": "knowledge_base/task_board/fish_tasks/shark.png",
+        "image": "knowledge_base/task_board/tasks_text/fish_tasks/shark.png",
         "auction_image": "knowledge_base/auction_images/fish/shark.png",
         "amount": 1,
         "necessity": "True"
     },
     {
         "name": "Тунец",
-        "image": "knowledge_base/task_board/fish_tasks/tuna.png",
+        "image": "knowledge_base/task_board/tasks_text/fish_tasks/tuna.png",
+        "image_board" : "knowledge_base/task_board/image_board/fish_tasks/tuna.png",
         "auction_image": "knowledge_base/auction_images/fish/tuna.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "name": "Дорадо",
-        "image": "knowledge_base/task_board/fish_tasks/dorado.png",
+        "image": "knowledge_base/task_board/tasks_text/fish_tasks/dorado.png",
+        "image_board" : "knowledge_base/task_board/image_board/fish_tasks/dorado.png",
         "auction_image": "knowledge_base/auction_images/fish/dorado.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "name": "Мидия",
-        "image": "knowledge_base/task_board/fish_tasks/mussel.png",
+        "image": "knowledge_base/task_board/tasks_text/fish_tasks/mussel.png",
+        "image_board" : "knowledge_base/task_board/image_board/fish_tasks/mussel.png",
         "auction_image": "knowledge_base/auction_images/fish/mussel.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "name": "Апистограмма",
-        "image": "knowledge_base/task_board/fish_tasks/apistogram.png",
+        "image": "knowledge_base/task_board/tasks_text/fish_tasks/apistogram.png",
+        "image_board" : "knowledge_base/task_board/image_board/fish_tasks/apistogram.png",
         "auction_image": "knowledge_base/auction_images/fish/apistogram.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "name": "Сельдь",
-        "image": "knowledge_base/task_board/fish_tasks/herring.png",
+        "image": "knowledge_base/task_board/tasks_text/fish_tasks/herring.png",
         "auction_image": "knowledge_base/auction_images/fish/herring.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "name": "Удильщик",
-        "image": "knowledge_base/task_board/fish_tasks/anglerfish.png",
+        "image": "knowledge_base/task_board/tasks_text/fish_tasks/anglerfish.png",
+        "image_board" : "knowledge_base/task_board/image_board/fish_tasks/anglerfish.png",
         "auction_image": "knowledge_base/auction_images/fish/anglerfish.png",
         "amount": 1,
         "necessity": "True"
     },
     {
         "name": "Цихлида-рогач",
-        "image": "knowledge_base/task_board/fish_tasks/stag_cichlid.png",
+        "image": "knowledge_base/task_board/tasks_text/fish_tasks/stag_cichlid.png",
+        "image_board" : "knowledge_base/task_board/image_board/fish_tasks/stag_cichlid.png",
         "auction_image": "knowledge_base/auction_images/fish/stag_cichlid.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "name": "Луфарь",
-        "image": "knowledge_base/task_board/fish_tasks/bluefish.png",
+        "image": "knowledge_base/task_board/tasks_text/fish_tasks/bluefish.png",
         "auction_image": "knowledge_base/auction_images/fish/bluefish.png",
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
+        "name": "Крибензис",
+        "image": "knowledge_base/task_board/tasks_text/fish_tasks/kribenzis.png",
+        "image_board" : "knowledge_base/task_board/image_board/fish_tasks/kribenzis.png",
+        "auction_image": "knowledge_base/auction_images/fish/kribenzis.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!HUNT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
         "name": "Беличья шкура",
-        "image": "knowledge_base/task_board/hunt_tasks/squirrel_skin.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/squirrel_skin.png",
+        "image_board" : "knowledge_base/task_board/image_board/hunt_tasks/squirrel_skin.png",
         "auction_image": "knowledge_base/auction_images/hunt/squirrel_skin.png",
         "amount": 5,
         "necessity": "False"
     },
     {
         "name": "Зебровая шкура",
-        "image": "knowledge_base/task_board/hunt_tasks/zebra_skin.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/zebra_skin.png",
+        "image_board" : "knowledge_base/task_board/image_board/hunt_tasks/zebra_skin.png",
         "auction_image": "knowledge_base/auction_images/hunt/zebra_skin.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "name": "Рог",
-        "image": "knowledge_base/task_board/hunt_tasks/horn.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/horn.png",
         "auction_image": "knowledge_base/auction_images/hunt/horn.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "name": "Страусиная шкура",
-        "image": "knowledge_base/task_board/hunt_tasks/ostrich_skin.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/ostrich_skin.png",
+        "image_board" : "knowledge_base/task_board/image_board/hunt_tasks/ostrich_skin.png",
         "auction_image": "knowledge_base/auction_images/hunt/ostrich_skin.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "name": "Пингвиний шкура",
-        "image": "knowledge_base/task_board/hunt_tasks/penguin_skin.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/penguin_skin.png",
+        "image_board" : "knowledge_base/task_board/image_board/hunt_tasks/penguin_skin.png",
         "auction_image": "knowledge_base/auction_images/hunt/penguin_skin.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "name": "Кроличий шкура",
-        "image": "knowledge_base/task_board/hunt_tasks/rabbit_skin.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/rabbit_skin.png",
+        "image_board" : "knowledge_base/task_board/image_board/hunt_tasks/rabbit_skin.png",
         "auction_image": "knowledge_base/auction_images/hunt/rabbit_skin.png",
         "amount": 5,
         "necessity": "False"
     },
     {
         "name": "Лягушачья шкура",
-        "image": "knowledge_base/task_board/hunt_tasks/frog_skin.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/frog_skin.png",
+        "image_board" : "knowledge_base/task_board/image_board/hunt_tasks/frog_skin.png",
         "auction_image": "knowledge_base/auction_images/hunt/frog_skin.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "name": "Шкура чёрной мамбы",
-        "image": "knowledge_base/task_board/hunt_tasks/black_mamba_skin.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/black_mamba_skin.png",
+        "image_board" : "knowledge_base/task_board/image_board/hunt_tasks/black_mamba_skin.png",
         "auction_image": "knowledge_base/auction_images/hunt/black_mamba_skin.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "name": "Шкура гремучей змеи",
-        "image": "knowledge_base/task_board/hunt_tasks/rattlesnake_skin.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/rattlesnake_skin.png",
+        "image_board" : "knowledge_base/task_board/image_board/hunt_tasks/rattlesnake_skin.png",
         "auction_image": "knowledge_base/auction_images/hunt/rattlesnake_skin.png",
         "amount": 5,
         "necessity": "True"
     },
     {
-        "name": "Перо(переделать скрин)",
-        "image": "knowledge_base/task_board/hunt_tasks/feather.png",
-        "auction_image": "knowledge_base/auction_images/hunt/feather.png",
+        "name": "Ядовитая железа",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/poison_gland.png",
+        "image_board" : "knowledge_base/task_board/image_board/hunt_tasks/poison_gland.png",
+        "auction_image": "knowledge_base/auction_images/hunt/poison_gland.png",
         "amount": 5,
         "necessity": "False"
     },
     {
+        "name": "Перо",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/feather.png",
+        "auction_image": "knowledge_base/auction_images/hunt/feather.png",
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
         "name": "Декоративное перо",
-        "image": "knowledge_base/task_board/hunt_tasks/decorative_feather.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/decorative_feather.png",
+        "image_board" : "knowledge_base/task_board/image_board/hunt_tasks/decorative_feather.png",
         "auction_image": "knowledge_base/auction_images/hunt/decorative_feather.png",
         "amount": 5,
         "necessity": "True"
     },
     {
+        "name": "Павлиньи перья",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/peacock_feathers.png",
+        "image_board" : "knowledge_base/task_board/image_board/hunt_tasks/peacock_feathers.png",
+        "auction_image": "knowledge_base/auction_images/hunt/peacock_feathers.png",
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
         "name": "Твёрдая скорлупа",
-        "image": "knowledge_base/task_board/hunt_tasks/hard_shell.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/hard_shell.png",
+        "image_board" : "knowledge_base/task_board/image_board/hunt_tasks/hard_shell.png",
         "auction_image": "knowledge_base/auction_images/hunt/hard_shell.png",
         "amount": 5,
         "necessity": "False"
     },
     {
         "name": "Лисья шкура",
-        "image": "knowledge_base/task_board/hunt_tasks/fox_skin.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/fox_skin.png",
         "auction_image": "knowledge_base/auction_images/hunt/fox_skin.png",
         "amount": 5,
         "necessity": "False"
     },
     {
         "name": "Мясо диких животных",
-        "image": "knowledge_base/task_board/hunt_tasks/wild_meat.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/wild_meat.png",
         "auction_image": "knowledge_base/auction_images/hunt/wild_meat.png",
         "amount": 5,
         "necessity": "False"
     },
     {
         "name": "Сухожилие",
-        "image": "knowledge_base/task_board/hunt_tasks/tendon.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/tendon.png",
+        "image_board" : "knowledge_base/task_board/image_board/hunt_tasks/tendon.png",
         "auction_image": "knowledge_base/auction_images/hunt/tendon.png",
         "amount": 5,
         "necessity": "True"
     },
     {
         "name": "Рефлексный сухожилие",
-        "image": "knowledge_base/task_board/hunt_tasks/reflex_tendon.png",
+        "image": "knowledge_base/task_board/tasks_text/hunt_tasks/reflex_tendon.png",
         "auction_image": "knowledge_base/auction_images/hunt/reflex_tendon.png",
         "amount": 5,
         "necessity": "False"
@@ -508,35 +593,39 @@
     {
         "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ORES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
         "name": "Сера",
-        "image": "knowledge_base/task_board/ores_tasks/sulfur.png",
+        "image": "knowledge_base/task_board/tasks_text/ores_tasks/sulfur.png",
+        "image_board" : "knowledge_base/task_board/image_board/ores_tasks/sulfur.png",
         "auction_image": "knowledge_base/auction_images/ores/sulfur.png",
         "amount": 10,
         "necessity": "True"
     },
     {
         "name": "Серебряная руда",
-        "image": "knowledge_base/task_board/ores_tasks/silver.png",
+        "image": "knowledge_base/task_board/tasks_text/ores_tasks/silver.png",
+        "image_board" : "knowledge_base/task_board/image_board/ores_tasks/silver.png",
         "auction_image": "knowledge_base/auction_images/ores/silver.png",
         "amount": 10,
         "necessity": "True"
     },
     {
         "name": "Золотая руда",
-        "image": "knowledge_base/task_board/ores_tasks/gold_ore.png",
+        "image": "knowledge_base/task_board/tasks_text/ores_tasks/gold_ore.png",
+        "image_board" : "knowledge_base/task_board/image_board/ores_tasks/gold_ore.png",
         "auction_image": "knowledge_base/auction_images/ores/gold_ore.png",
         "amount": 10,
         "necessity": "False"
     },
     {
         "name": "Кобальтовая руда",
-        "image": "knowledge_base/task_board/ores_tasks/cobalt_ore.png",
+        "image": "knowledge_base/task_board/tasks_text/ores_tasks/cobalt_ore.png",
         "auction_image": "knowledge_base/auction_images/ores/cobalt_ore.png",
         "amount": 10,
         "necessity": "False"
     },
     {
         "name": "Обсидиан",
-        "image": "knowledge_base/task_board/ores_tasks/obsidian.png",
+        "image": "knowledge_base/task_board/tasks_text/ores_tasks/obsidian.png",
+        "image_board" : "knowledge_base/task_board/image_board/ores_tasks/obsidian.png",
         "auction_image": "knowledge_base/auction_images/ores/obsidian.png",
         "amount": 10,
         "necessity": "False"
@@ -544,72 +633,96 @@
     {
         "_comment": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PLANTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
         "name": "Лист туманной розы",
-        "image": "knowledge_base/task_board/plants_tasks/misty_rose_leaf.png",
+        "image": "knowledge_base/task_board/tasks_text/plants_tasks/misty_rose_leaf.png",
         "auction_image": "knowledge_base/auction_images/plants/misty_rose_leaf.png",
         "amount": 10,
         "necessity": "True"
     },
     {
         "name": "Смолистая твёрдая древесина",
-        "image": "knowledge_base/task_board/plants_tasks/resinous_hardwood.png",
+        "image": "knowledge_base/task_board/tasks_text/plants_tasks/resinous_hardwood.png",
+        "image_board" : "knowledge_base/task_board/image_board/plants_tasks/resinous_hardwood.png",
         "auction_image": "knowledge_base/auction_images/plants/resinous_hardwood.png",
         "amount": 10,
         "necessity": "False"
     },
     {
         "name": "Кожаное полено",
-        "image": "knowledge_base/task_board/plants_tasks/leather_log.png",
+        "image": "knowledge_base/task_board/tasks_text/plants_tasks/leather_log.png",
+        "image_board" : "knowledge_base/task_board/image_board/plants_tasks/leather_log.png",
         "auction_image": "knowledge_base/auction_images/plants/leather_log.png",
         "amount": 10,
         "necessity": "False"
     },
     {
         "name": "Огненное семя",
-        "image": "knowledge_base/task_board/plants_tasks/fire_seed.png",
+        "image": "knowledge_base/task_board/tasks_text/plants_tasks/fire_seed.png",
         "auction_image": "knowledge_base/auction_images/plants/fire_seed.png",
         "amount": 1,
         "necessity": "False"
     },
     {
+        "name": "Сухой стебель маргаритки",
+        "image": "knowledge_base/task_board/tasks_text/plants_tasks/dry_daisy_stem.png",
+        "image_board" : "knowledge_base/task_board/image_board/plants_tasks/dry_daisy_stem.png",
+        "auction_image": "knowledge_base/auction_images/plants/dry_daisy_stem.png",
+        "amount": 1,
+        "necessity": "True"
+    },
+    {
         "name": "Тонкий стебель",
-        "image": "knowledge_base/task_board/plants_tasks/thin_stem.png",
+        "image": "knowledge_base/task_board/tasks_text/plants_tasks/thin_stem.png",
+        "image_board" : "knowledge_base/task_board/image_board/plants_tasks/thin_stem.png",
         "auction_image": "knowledge_base/auction_images/plants/thin_stem.png",
         "amount": 10,
         "necessity": "False"
     },
     {
         "name": "Капля тумана",
-        "image": "knowledge_base/task_board/plants_tasks/drop_of_fog.png",
+        "image": "knowledge_base/task_board/tasks_text/plants_tasks/drop_of_fog.png",
+        "image_board" : "knowledge_base/task_board/image_board/plants_tasks/drop_of_fog.png",
         "auction_image": "knowledge_base/auction_images/plants/drop_of_fog.png",
         "amount": 1,
         "necessity": "False"
     },
     {
         "name": "Лист маргаритки",
-        "image": "knowledge_base/task_board/plants_tasks/daisy_leaf.png",
+        "image": "knowledge_base/task_board/tasks_text/plants_tasks/daisy_leaf.png",
+        "image_board" : "knowledge_base/task_board/image_board/plants_tasks/sparkling_leaf.png",
         "auction_image": "knowledge_base/auction_images/plants/daisy_leaf.png",
         "amount": 1,
         "necessity": "False"
     },
     {
         "name": "Искроносная пыльца",
-        "image": "knowledge_base/task_board/plants_tasks/sparkling_pollen.png",
+        "image": "knowledge_base/task_board/tasks_text/plants_tasks/sparkling_pollen.png",
+        "image_board" : "knowledge_base/task_board/image_board/plants_tasks/sparkling_pollen.png",
         "auction_image": "knowledge_base/auction_images/plants/sparkling_pollen.png",
         "amount": 10,
         "necessity": "False"
     },
     {
         "name": "Искроносный лист",
-        "image": "knowledge_base/task_board/plants_tasks/sparkling_leaf.png",
+        "image": "knowledge_base/task_board/tasks_text/plants_tasks/sparkling_leaf.png",
+        "image_board" : "knowledge_base/task_board/image_board/plants_tasks/sparkling_leaf.png",
         "auction_image": "knowledge_base/auction_images/plants/sparkling_leaf.png",
         "amount": 10,
         "necessity": "True"
     },
     {
         "name": "Туманное семя",
-        "image": "knowledge_base/task_board/plants_tasks/misty_seed.png",
+        "image": "knowledge_base/task_board/tasks_text/plants_tasks/misty_seed.png",
+        "image_board" : "knowledge_base/task_board/image_board/plants_tasks/misty_seed.png",
         "auction_image": "knowledge_base/auction_images/plants/misty_seed.png",
         "amount": 10,
+        "necessity": "False"
+    },
+    {
+        "name": "Пыль мечтаний",
+        "image": "knowledge_base/task_board/tasks_text/plants_tasks/dust_of_dreams.png",
+        "image_board" : "knowledge_base/task_board/image_board/plants_tasks/dust_of_dreams.png",
+        "auction_image": "knowledge_base/auction_images/plants/dust_of_dreams.png",
+        "amount": 1,
         "necessity": "False"
     }
 ]

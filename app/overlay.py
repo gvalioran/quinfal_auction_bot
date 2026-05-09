@@ -29,10 +29,26 @@ class Overlay(QtWidgets.QWidget):
 
     def paintEvent(self, event):
         painter = QtGui.QPainter(self)
-        painter.setFont(self.font)
-        painter.setPen(self.color)
-        rect = QtCore.QRect(50, 50, 800, 600)
-        painter.drawText(rect, QtCore.Qt.AlignLeft | QtCore.Qt.TextWordWrap, self.text)
+        painter.setRenderHint(QtGui.QPainter.Antialiasing)
+
+        # --- НЕОНОВОЕ СВЕЧЕНИЕ ---
+        glow = QtGui.QPen(QtGui.QColor(120, 0, 255, 180))
+        glow.setWidth(6)
+        painter.setPen(glow)
+        painter.setFont(QtGui.QFont("Consolas", 16, QtGui.QFont.Bold))
+        painter.drawText(
+            50, 50, 800, 600,
+            QtCore.Qt.AlignLeft | QtCore.Qt.TextWordWrap,
+            self.text
+        )
+
+        # --- ОСНОВНОЙ ТЕКСТ ---
+        painter.setPen(QtGui.QColor(200, 120, 255))
+        painter.drawText(
+            50, 50, 800, 600,
+            QtCore.Qt.AlignLeft | QtCore.Qt.TextWordWrap,
+            self.text
+        )
 
     @QtCore.pyqtSlot(str)
     def update_text(self, new_text):
