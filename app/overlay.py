@@ -35,7 +35,7 @@ class Overlay(QtWidgets.QWidget):
         glow = QtGui.QPen(QtGui.QColor(120, 0, 255, 180))
         glow.setWidth(6)
         painter.setPen(glow)
-        painter.setFont(QtGui.QFont("Consolas", 16, QtGui.QFont.Bold))
+        painter.setFont(QtGui.QFont("Consolas", 11, QtGui.QFont.Bold))
         painter.drawText(
             50, 50, 800, 600,
             QtCore.Qt.AlignLeft | QtCore.Qt.TextWordWrap,

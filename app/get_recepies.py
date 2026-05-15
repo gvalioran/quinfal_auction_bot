@@ -128,15 +128,16 @@ def buying_items(collect):
                 recipes = json.load(f)
             for recipy in recipes:
                 if recipy["name"] == collect[0]:
-                    send_text(f"Фаза 3\n Покупка предметов\n Покупаю\n {recipy['name']}\n {review}")
-                    if buy_item(recipy, recipy["amount"]):
-                        collect.pop(0)
-                        review = ", ".join(collect)
+                    remainder = recipy["amount"]
+                    while remainder != 0:
                         send_text(f"Фаза 3\n Покупка предметов\n Покупаю\n {recipy['name']}\n {review}")
-                        if collect == []:
-                            while True:
-                                send_text("Покупка предметов завершена")
-                                time.sleep(30)
+                        remainder = buy_item(recipy, remainder)
+                    collect.pop(0)
+                    review = ", ".join(collect)
+                    if collect == []:
+                        while True:
+                            send_text("Покупка предметов завершена")
+                            time.sleep(30)
                     else:
                         continue
 
@@ -170,28 +171,29 @@ def buy_item(item, item_count):
     find_item = pyautogui.locateCenterOnScreen(os.path.join(BASE_DIR, item["auction_image"]), confidence=CONFIDENCE)
     x, y = find_item
     pyautogui.click(x + 120, y)
+    remainder = 0
     if item_count == 1:
         pass
     else:
-        real_count = 0
         count = pyautogui.locateCenterOnScreen(AUCTION_COUNT, confidence=HIGH_CONFIDENCE)
         pyautogui.click(count)
         for _ in range(item_count-1):
             pydirectinput.press('right')
-        for num in range(10):
+        for num in range(item_count-1):
             try:
                 amount = os.path.join(AUCTION_PATH, "count", f"{num + 1}.png")
                 pyautogui.locateCenterOnScreen(amount, confidence=HIGH_CONFIDENCE)
                 real_count = num + 1
-                print(f"Осталось купить {item['name']} {item_count - real_count}")
+                remainder = item_count - real_count
                 break
-            except Exception as err:
-                print("Неожиданная ошибка:", err)
+            except ImageNotFoundException:
+                continue
+            except Exception:
                 continue
     buy = pyautogui.locateCenterOnScreen(BUY_BUTTON, confidence=CONFIDENCE)
     if buy:
         pyautogui.click(buy)
-        return True
+        return remainder
     else:
         return False
 
