@@ -252,8 +252,9 @@
         ]
     },
     {
-        "name": "Рыбный хлеб [Уровень 1]",
+        "name": "Хлеб [Уровень 1]",
         "image": "knowledge_base/task_board/tasks_text/cooking_tasks/fish_bread.png",
+        "image_board" : "knowledge_base/task_board/image_board/cooking_tasks/fish_bread.png",
         "auction_image": "knowledge_base/auction_images/cooking/fish_bread.png",
         "amount": 1,
         "necessity": "True",
@@ -332,6 +333,7 @@
     {
         "name": "Блюдо из Травы Скорости [Уровень 1]",
         "image": "knowledge_base/task_board/tasks_text/cooking_tasks/speed.png",
+        "image_board" : "knowledge_base/task_board/image_board/cooking_tasks/speed.png",
         "auction_image": "knowledge_base/auction_images/cooking/speed.png",
         "amount": 1,
         "necessity": "True",
@@ -471,6 +473,14 @@
         "image": "knowledge_base/task_board/tasks_text/fish_tasks/kribenzis.png",
         "image_board" : "knowledge_base/task_board/image_board/fish_tasks/kribenzis.png",
         "auction_image": "knowledge_base/auction_images/fish/kribenzis.png",
+        "amount": 5,
+        "necessity": "True"
+    },
+    {
+        "name": "Неон Тетра",
+        "image": "knowledge_base/task_board/tasks_text/fish_tasks/neon_tetra.png",
+        "image_board" : "knowledge_base/task_board/image_board/fish_tasks/neon_tetra.png",
+        "auction_image": "knowledge_base/auction_images/fish/neon_tetra.png",
         "amount": 5,
         "necessity": "True"
     },

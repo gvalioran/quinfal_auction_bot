@@ -28,7 +28,6 @@ def search_tasks():
 
 def search_tasks_names(collect):
     while True:
-        #time.sleep(5)
         recipes = f"{BOARD_PATH}/recipes.json"
         with open(recipes, "r", encoding="utf-8") as f:
             recipes = json.load(f)
@@ -69,7 +68,6 @@ def find_auction(collect):
 
 def setup_auction(collect):
     while True:
-        #time.sleep(5)
         try:
             try:
                 pyautogui.locateCenterOnScreen(AUCTION_MAIN_PANEL, confidence=CONFIDENCE)
