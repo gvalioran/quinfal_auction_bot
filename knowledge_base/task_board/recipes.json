@@ -111,6 +111,22 @@
         ]
     },
     {
+        "name": "Облегчающий эликсир [Уровень 1]",
+        "image": "knowledge_base/task_board/tasks_text/alchemy_tasks/relieving_elixir.png",
+        "image_board" : "knowledge_base/task_board/image_board/alchemy_tasks/relieving_elixir.png",
+        "auction_image": "knowledge_base/auction_images/alchemy/relieving_elixir.png",
+        "amount": 1,
+        "necessity": "True",
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "",
+                "image": "knowledge_base/",
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Полевaя Смесь [Уровень 1]",
         "image": "knowledge_base/task_board/tasks_text/alchemy_tasks/field_mixture.png",
         "image_board" : "knowledge_base/task_board/image_board/alchemy_tasks/field_mixture.png",
@@ -268,6 +284,22 @@
         ]
     },
     {
+        "name": "Минеральный камень [Уровень 1]",
+        "image": "knowledge_base/task_board/tasks_text/cooking_tasks/mineral_stone.png",
+        "image_board" : "knowledge_base/task_board/image_board/cooking_tasks/mineral_stone.png",
+        "auction_image": "knowledge_base/auction_images/cooking/mineral_stone.png",
+        "amount": 1,
+        "necessity": "True",
+        "ingredients": [
+            {
+                "id": "ingredient_01",
+                "name": "",
+                "image": "knowledge_base/",
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Жирный хлеб [Уровень 1]",
         "image": "knowledge_base/task_board/tasks_text/cooking_tasks/fat_bread.png",
         "auction_image": "knowledge_base/auction_images/cooking/fat_bread.png",
@@ -355,6 +387,7 @@
     {
         "name": "Острая Суп [Уровень 1]",
         "image": "knowledge_base/task_board/tasks_text/cooking_tasks/spicy_soup.png",
+        "image_board" : "knowledge_base/task_board/image_board/cooking_tasks/spicy_soup.png",
         "auction_image": "knowledge_base/auction_images/cooking/spicy_soup.png",
         "amount": 1,
         "necessity": "True",
@@ -757,7 +790,7 @@
         "image_board" : "knowledge_base/task_board/image_board/plants_tasks/thin_stem.png",
         "auction_image": "knowledge_base/auction_images/plants/thin_stem.png",
         "amount": 10,
-        "necessity": "False"
+        "necessity": "True"
     },
     {
         "name": "Капля тумана",
