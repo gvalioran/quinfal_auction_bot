@@ -1,6 +1,6 @@
 import threading
 from app.overlay import start_overlay
-from app.get_recepies import start_logic
+from app.get_recepies_new import start_logic
 
 def main():
     t_ui = threading.Thread(target=start_overlay, daemon=True)

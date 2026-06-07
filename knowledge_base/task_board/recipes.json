@@ -390,7 +390,7 @@
         "image_board" : "knowledge_base/task_board/image_board/cooking_tasks/spicy_soup.png",
         "auction_image": "knowledge_base/auction_images/cooking/spicy_soup.png",
         "amount": 1,
-        "necessity": "True",
+        "necessity": "False",
         "ingredients": [
             {
                 "id": "ingredient_01",
